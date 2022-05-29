@@ -1,0 +1,35 @@
+<!-- <input type="text" class="form-control"
+  (input)="onupdateservername($event)"> -->
+
+<!-- <input type="text" class="form-control"
+[(ngModel)]="ServerName"> -->
+<!-- <p>{{ServerName}}</p> -->
+<!-- <button class="btn-btn-primary"
+ [disabled]="!allowanotheserver"
+ (click)="oncreateserver()"> addserver</button>
+<p *ngIf="servercreated; else Noserver ">Server was created , Server Name Is {{ServerName}}</p>
+
+<ng-template #Noserver>
+  <p > No server was created</p>
+</ng-template> -->
+<!-- <p>server with ID{{serverId}} is {{getserverstatus()}}</p> -->
+<!-- <p>{{servercreation}}</p> -->
+<!-- <label>UserName</label>
+<input type="text" class="form-control" [(ngModel)]="UserName">
+<p>{{UserName}}</p>
+
+<button class="btn-btn-primary"
+ [disabled]="UserName===''"
+ (click)="UserName =''">Reset user</button> -->
+
+ <!-- <p [ngStyle]="{'background-color':Getcolor()}">server with ID{{serverId}} is {{getserverstatus()}}</p> -->
+
+
+ <!-- <button class="btn-btn-primary"
+ (click)="Showscret =!Showscret">Display Details</button> -->
+
+ <button class="btn-btn-primary"
+ (click)="ontoggledisplay()">Display Details</button>
+ <p *ngIf="Showscret"> Hello Iam Aliaa</p>
+ <div *ngFor="let item of log"
+ [ngStyle]="{'background-color': item>= 5 ?'blue':'transparent'}">{{item}}</div>
